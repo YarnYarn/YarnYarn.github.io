@@ -1,7 +1,7 @@
 function init(){
-	var paper = new Raphael('maindiv',800,600);
+	var paper = new Raphael('maindiv',window.innerWidth,window.innerHeight);
 	
-	var renderer = new Renderer(paper,800,600);
+	var renderer = new Renderer(paper,window.innerWidth,window.innerHeight);
 	
 	renderer.addVector(new Vector3(50,0,0));
 	renderer.addVector(new Vector3(0,50,0));
