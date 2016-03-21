@@ -13,4 +13,5 @@ body {
 	height: 100%x;
 	overflow: visible;
 	background-color: #000000;
+	z-index: 10;
 }
