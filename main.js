@@ -18,7 +18,7 @@ function init(){
 	for (var i=0; i < mapsize; i++) {
 		map[i] = new Array(mapsize);
 		for (var j=0; j < mapsize; j++) {
-			map[i][j] = new Cell(Math.random < 0.05 ? 1 : 0);
+			map[i][j] = new Cell(Math.random() < 0.05 ? 1 : 0);
 			console.log(map[i][j])
 		}
 	}
