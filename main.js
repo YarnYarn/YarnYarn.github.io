@@ -187,9 +187,9 @@ function init(){ //make food decay, make food pop up
 }
 */
 
-	/*
+	
 	setInterval(function(){
-		for (var x=0; x < 100; x++) {
+		for (var x=0; x < 1; x++) {
 				for (var i=0; i < mapsize; i++) {
 					for (var j=0; j < mapsize; j++) {
 						map[i][j].pher *= pher_decay_rate;
@@ -222,9 +222,9 @@ function init(){ //make food decay, make food pop up
 			}
 		}
 		//console.log(homefood);
-	},1500);
+	},750);
 }
-*/
+/*
 	for (var x=0; x < 10000; x++) {
 			for (var i=0; i < mapsize; i++) {
 				for (var j=0; j < mapsize; j++) {
@@ -248,7 +248,7 @@ function init(){ //make food decay, make food pop up
 			}
 		}
 	}
-	/*
+	
 	for (var i=0; i < number_of_ants; i++) {
 		if (ants[i].has_food)
 		{
@@ -257,6 +257,6 @@ function init(){ //make food decay, make food pop up
 			paper.rect(ants[i].x*tilesize, ants[i].y*tilesize, tilesize, tilesize).attr({"fill":"#0000ff","stroke-width":"0"});
 		}
 	}
-	*/
-}
+	
+}*/
 //console.log(homefood);
