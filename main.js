@@ -1,28 +1,29 @@
 function init(){
-	var paper = new Raphael('maindiv',window.innerWidth,window.innerHeight-200);
-	
-	var renderer = new Renderer(paper,window.innerWidth,window.innerHeight-200);
-	
-	renderer.addVector(new Vector3(50,0,0));
-	renderer.addVector(new Vector3(0,50,0));
-	renderer.addVector(new Vector3(0,0,50));
-	renderer.addVector(new Vector3(50,0,0));
-	renderer.addVector(new Vector3(0,0,0));
-	renderer.addVector(new Vector3(0,50,0));
-	renderer.addVector(new Vector3(0,0,0));
-	renderer.addVector(new Vector3(0,0,50));
+	function Ant (id,x,y) {
+		this.id = id;
+		this.x = x;
+		this.y = y;
+	}
 
-	var lastTime = new Date().getTime();
+	function Cell (food) {
+		this.food = food;
+		this.pher = 0.0;
+	}
 
-
-	renderer.scale(4,4,4);
-	renderer.translate(0,100,0);
-
+	var size = 500;
+	var paper = new Raphael('maindiv', size);
+	var mapsize = size/10;
+	var tilesize = 10;
+	var map = new Array(mapsize);
+	for (var i=0; i < mapsize; i++) {
+		map[i] = new Array(mapsize);
+		for (var j=0; j < mapsize; j++) {
+			map[i][j] = new Cell(Math.random < 0.05 ? 1 : 0);
+			Console.log(map[i][j])
+		}
+	}
 
 	setInterval(function(){
-		renderer.drawLines();
-		var dt = new Date().getTime() - lastTime;
-		lastTime = new Date().getTime();
-		renderer.rotate(0.001*dt,-0.0005*dt,0.00025*dt);
-	},1/20);
+		var a = 1;
+	},1/5);
 }

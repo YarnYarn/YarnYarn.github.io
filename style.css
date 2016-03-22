@@ -9,12 +9,12 @@ body {
 }
 #maindiv {
 	top: 10%;
-	left: 0%;
+	left: 18%;
 	position: absolute;
 	margin-top: 0px;
 	margin-left: 0px;
 
-	width: 75%;
+	width: 50%;
 	height: 75%x;
 	overflow: hidden;
 	background-color: #000000;
