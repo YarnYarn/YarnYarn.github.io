@@ -222,7 +222,7 @@ function init(){ //make food decay, make food pop up
 			}
 		}
 		//console.log(homefood);
-	},750);
+	},250);
 }
 /*
 	for (var x=0; x < 10000; x++) {
