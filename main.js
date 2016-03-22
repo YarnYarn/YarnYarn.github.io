@@ -57,7 +57,7 @@ function init(){
 	var midpoint = Math.floor(mapsize/2);
 	var map = new Array(mapsize);
 	var number_of_ants = 5;
-	var pher_decay_rate = 0.999;
+	var pher_decay_rate = 0.9998;
 	for (var i=0; i < mapsize; i++) {
 		map[i] = new Array(mapsize);
 		for (var j=0; j < mapsize; j++) {
@@ -99,7 +99,7 @@ function init(){
 }
 */
 
-for (var x=0; x < 100; x++) {
+for (var x=0; x < 200; x++) {
 		for (var i=0; i < mapsize; i++) {
 			for (var j=0; j < mapsize; j++) {
 				map[i][j].pher *= pher_decay_rate;
